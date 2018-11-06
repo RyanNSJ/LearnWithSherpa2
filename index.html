@@ -262,11 +262,17 @@
       <div class="container text-center">
         <h2 class="mb-4">Complete our survey to sign up as an early access beta tester!</h2>
           <input class="btn btn-xl btn-light mr-4" type="text" id="email" name="email" placeholder="Email Address">
-          <a id="survey" class="btn btn-xl btn-dark">Take the Survey!</a>
+          <a id="survey1" class="btn btn-xl btn-dark">Survey for Parents</a>
+          <a id="survey2" class="btn btn-xl btn-dark">Survey for Non-Parents</a>
+          
           <script>
-            var survey = document.getElementById("survey");
-            survey.addEventListener('click', function() {
+            var survey1 = document.getElementById("survey1");
+            survey1.addEventListener('click', function() {
               window.location = "https://docs.google.com/forms/d/e/1FAIpQLSd3EV3gzyAPl3QMxvQXIJqWEW9OLjw6Q7fBENaObQGpT3FLAQ/viewform?usp=pp_url&entry.1140361277="+email.value;
+            }, false);
+            var survey2 = document.getElementById("survey2");
+            survey2.addEventListener('click', function() {
+              window.location = "https://docs.google.com/forms/d/e/1FAIpQLSeSYjnzuszN104usO8AnTjZP1ISHP15eZENCB0NePtNGyonRQ/viewform?usp=pp_url&entry.2134005558="+email.value;
             }, false);
         </script>
       </div>
